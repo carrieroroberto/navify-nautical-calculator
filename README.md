@@ -3,7 +3,8 @@
 
 🛠️ The repository contains:
 
-➡ <b>Source code</b>: Javascript code for business logic and HTML, CSS for presentation.
+➡ <b>Source code</b>: Javascript code for business logic and HTML, CSS for presentation.ù
+<br>
 
 👨🏻‍💻 Functionalities:
 
