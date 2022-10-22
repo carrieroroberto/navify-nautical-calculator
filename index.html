@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Navify</title>
+</head>
+<body>
+        <main>
+            <section id="input_group" class="">
+                <div class="title">
+                    <i class="fa-solid fa-ship"></i>
+                    <p class="h1">Navify</p>
+                    <p class="sub">Calcolatore nautico</p>
+                </div>
+                <div id="a">
+                    <div class="punto">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="h2">Punto A</p>
+                    </div>
+                    <div class="fi">
+                        <div class="input-group mb-3">
+                            <span class="first input-group-text" id="basic-addon1">φA</span>
+                            <input type="number" class="form-control shadow-none" placeholder="Gradi" aria-label="Gradi" aria-describedby="basic-addon1" id="gradi_fi_a" min="0">
+                            <span class="input-group-text" id="basic-addon1">°</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Primi" aria-label="Primi" aria-describedby="basic-addon1" id="primi_fi_a" min="0">
+                            <span class="input-group-text" id="basic-addon1">'</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Secondi" aria-label="Secondi" aria-describedby="basic-addon1" id="secondi_fi_a" min="0">
+                            <span class="input-group-text" id="basic-addon1">''</span>
+                        </div>
+                        <select class="form-select form-select-lg mb-3 shadow-none" id="cardine_fi_a" aria-label=".form-select-lg example">
+                            <option selected disabled value="none">Cardine</option>
+                            <option value="N">N</option>
+                            <option value="S">S</option>
+                        </select>
+                    </div>
+                    <div class="lambda">
+                        <div class="input-group mb-3">
+                            <span class="first input-group-text" id="basic-addon1">λA</span>
+                            <input type="number" class="form-control shadow-none" placeholder="Gradi" aria-label="Gradi" aria-describedby="basic-addon1" id="gradi_lambda_a" min="0">
+                            <span class="input-group-text" id="basic-addon1">°</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Primi" aria-label="Primi" aria-describedby="basic-addon1" id="primi_lambda_a" min="0">
+                            <span class="input-group-text" id="basic-addon1">'</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Secondi" aria-label="Secondi" aria-describedby="basic-addon1" id="secondi_lambda_a" min="0">
+                            <span class="input-group-text" id="basic-addon1">''</span>
+                        </div>
+                        <select class="form-select form-select-lg mb-3 shadow-none" id="cardine_lambda_a" aria-label=".form-select-lg example">
+                            <option selected disabled value="none">Cardine</option>
+                            <option value="E">E</option>
+                            <option value="W">W</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="b">
+                    <div class="punto">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="h2">Punto B</p>
+                    </div>
+                    <div class="fi">
+                        <div class="input-group mb-3">
+                            <span class="first input-group-text" id="basic-addon1">φB</span>
+                            <input type="number" class="form-control shadow-none" placeholder="Gradi" aria-label="Gradi" aria-describedby="basic-addon1" id="gradi_fi_b" min="0">
+                            <span class="input-group-text" id="basic-addon1">°</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Primi" aria-label="Primi" aria-describedby="basic-addon1" id="primi_fi_b" min="0">
+                            <span class="input-group-text" id="basic-addon1">'</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Secondi" aria-label="Secondi" aria-describedby="basic-addon1" id="secondi_fi_b" min="0">
+                            <span class="input-group-text" id="basic-addon1">''</span>
+                        </div>
+                        <select class="form-select form-select-lg mb-3 shadow-none" id="cardine_fi_b" aria-label=".form-select-lg example">
+                            <option selected disabled value="none">Cardine</option>
+                            <option value="N">N</option>
+                            <option value="S">S</option>
+                        </select>
+                    </div>
+                    <div class="lambda">
+                        <div class="input-group mb-3">
+                            <span class="first input-group-text" id="basic-addon1">λB</span>
+                            <input type="number" class="form-control shadow-none" placeholder="Gradi" aria-label="Gradi" aria-describedby="basic-addon1" id="gradi_lambda_b" min="0">
+                            <span class="input-group-text" id="basic-addon1">°</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Primi" aria-label="Primi" aria-describedby="basic-addon1" id="primi_lambda_b" min="0">
+                            <span class="input-group-text" id="basic-addon1">'</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Secondi" aria-label="Secondi" aria-describedby="basic-addon1" id="secondi_lambda_b" min="0">
+                            <span class="input-group-text" id="basic-addon1">''</span>
+                        </div>
+                        <select class="form-select form-select-lg mb-3 shadow-none" id="cardine_lambda_b" aria-label=".form-select-lg example">
+                            <option selected disabled value="none">Cardine</option>
+                            <option value="E">E</option>
+                            <option value="W">W</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="further">
+                    <div id="etd_in">
+                        <div class="punto">
+                            <i class="fa-solid fa-calendar"></i>
+                            <p class="h2">ETD</p>
+                        </div>
+                        <input class="form-control shadow-none" id="etd" type="datetime-local"/>
+                    </div>
+                    <div id="speed">
+                        <div class="punto">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <p class="h2">Velocità</p>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control shadow-none" placeholder="Velocità" aria-label="Velocità" aria-describedby="basic-addon1" id="vel" min="0">
+                            <span class="input-group-text" id="basic-addon1">kts</span>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="btn" class="btn shadow-none">Calcola</button>
+            </section>
+            <section id="result" class="hide"></section>
+        </main>
+    <script src="app.js"></script>
+</body>
+</html>
